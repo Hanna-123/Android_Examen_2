@@ -47,7 +47,16 @@ public class MainActivity extends Activity implements View.OnTouchListener{
 
     ///////aun no sirve
     public void borrarTodo(View v){
-        borrarCanvas = true;
+        jtv.setText("");
+        for(int i =0; i < 3; i++){
+            puntosX[i] = 0.0;
+            puntosY[i] = 0.0;
+            x = 0;
+            y = 0;
+        }
+        countPuntos = 0;
+        jtv.append("\t ====Vuelva a pulsar 3 veces=== \n\n");
+
 
     }
     public boolean onTouch(View v, MotionEvent event) {
