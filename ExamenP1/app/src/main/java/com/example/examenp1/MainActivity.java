@@ -44,8 +44,6 @@ public class MainActivity extends Activity implements View.OnTouchListener{
 
     }
 
-
-    ///////aun no sirve
     public void borrarTodo(View v){
         jtv.setText("");
         for(int i =0; i < 3; i++){
